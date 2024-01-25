@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <!-- Lien vers la feuille de style de bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <!-- Lien vers la feuille js de bootstrap 5 -->
+     <script src="assets/js/bootstrap.js"></script>
+    <!-- Lien vers les icônes de bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/icons/bootstrap-icons.css">
+</head>
+<style>
+    .fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+</style>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#">VMS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+            <div class="offcanvas-body" style="width: 100%;">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#profile">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Éducation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience">Expérience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Formations">Formations</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <!-- Section principale -->
+    <main class="container py-4">
+        <!-- Profil -->
+        <div id="profile" class="row">
+            <div class="col-md-4">
+                <img src="assets/images/photo.png" alt="Photo de profil" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h2 class="mb-0"><em>Hello, je suis</em></h2><br>
+                <h1 class=" text-uppercase text-gradient mt-0">Viekoy Mbombo Salomon</h1>
+                <p class="muted">Développeur web junior &middot; 2D et 3D Disigner &middot; Programmeur</p>
+                <p class="lead">Passionné par le développement web, je maîtrise les langages HTML, CSS et le Frameworks Bootstrap, Visual Basic .NET. Je suis à la recherche d'un stage ou d'un emploi dans ce domaine.</p>
+                <a href="cv.pdf" class="btn btn-outline-primary">Télécharger mon CV</a>
+            </div>
+        </div>
+        <!-- Expérience -->
+        <div id="experience" class="row mt-4">
+            <div class="col-12">
+                <h2 class="h3">Expérience <i class="bi bi-tools"></i></h2>
+                <div class="card mb-3 shadow-lg p-3">
+                    <div class="card-body">
+                        <h3 class="card-title">OPS CENI RDC</h3>
+                        <p class="card-subtitle text-muted">2022</p>
+                        <p class="card-text">CENI RDC, RDC</p>
+                        <p class="card-text"> Opérateur de saisi pour le recensement des électeurs (CENI RDC) </p>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow-lg p-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Makers (Orange Digital Center RDC)</h3>
+                        <p class="card-subtitle text-muted">Novembre 2023 - En cours...</p>
+                        <p class="card-text">ODC RDC, RDC</p>
+                        <p class="card-text"> je participe au parcours Makers à Orange Digital Center RDC, un programme qui m'initie à la fabrication numérique. J'y réalise des projets innovants en utilisant des outils comme Arduino, ou encore la découpeuse laser</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projets -->
+        <div id="projects" class="row mt-4">
+            <div class="col-12">
+                <h2 class="h3">Projets</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3 shadow-lg p-3">
+                            <img src="assets/images/project1.png" alt="Projet 1" class="img-thumnail" style="height: 30%; width: 30%;">
+                            <div class="card-body">
+                                <h3 class="card-title">Blog personnel</h3>
+                                <p class="card-text">Création d'un blog personnel avec Hashnode. Le blog permet de publier des articles, de les commenter et de les partager sur les réseaux sociaux.</p>
+                                <a href="https://techvms.tech" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3 shadow-lg p-3">
+                            <img src="assets/images/project2.png" alt="Projet 2" class="card-img-top" style="height: 30%; width: 21%;">
+                            <div class="card-body">
+                                <h3 class="card-title">Site de partage des cours</h3>
+                                <p class="card-text">Réalisation d'un site de partage des cours avec HTML, CSS, bootstrap. Le site permet d'aider les débutants en informatique d'acquérir des connaissances de base en informatique en tant que débutant.<br><span class="text-muted">Ce site est en de developpement...</span></p>
+                                <a href="https://salomon-vms.github.io/home" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Compétences -->
+        <div id="skills" class="row mt-4">
+            <div class="col-12">
+                <h2 class="h3">Compétences</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3 shadow-lg">
+                            <div class="card-body">
+                                <h3 class="card-title">Langages</h3>
+                                <ul class="list-unstyled fade-in">
+                                    <li><i class="fs-5 bi-check-lg"></i> HTML <img src="assets/images/html.png" width="30"></li>
+                                    <li><i class="fs-5 bi-check-lg"></i> CSS <img src="assets/images/css3.png" width="30"></li>
+                                    <li><i class="fs-5 bi-check-lg"></i> Visual Basic .NET <img src="assets/images/vb.png" width="30"> </li>
+                                    <li><i class="fs-5 bi-check-lg"></i> Python (Niveau débutant) <img src="assets/images/python.png" width="30"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3 shadow-lg p-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Frameworks</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fs-5 bi-check-lg"></i> Bootstrap <img src="assets/images/bootstrap.png" width="30"></li>
+                                    <br><br><br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3 shadow-lg p-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Logiciels</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fs-5 bi-check-lg"></i> Suite Office <img src="assets/images/office.png" width="30"></li>
+                                    <li><i class="fs-5 bi-check-lg"></i> Inkscape (2D Design) <img src="assets/images/inkscape.png" width="30"></li>
+                                    <li><i class="fs-5 bi-check-lg"></i> SolidWorks (3D Design) <img src="assets/images/solidworks.png" width="30"></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Éducation -->
+        <div id="education" class="row mt-4">
+            <div class="col-12">
+                <h2 class="h3">Éducation <i class="bi bi-book-half"></i></h2>
+                <div class="card mb-3 shadow-lg p-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Étudiant en informatique de gestion (Bac+2)</h3>
+                        <p class="card-subtitle text-muted">2022 - A ce jour...</p>
+                        <p class="card-text">ISIPA Kinshasa, RDC</p>
+                        <p class="card-text">Formation en développement web et Logiciels, programmation, bases de données, réseaux, systèmes d'exploitation, etc.</p>
+              </div>
+                </div>
+                <div class="card mb-3 shadow-lg p-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Diplôme d'Etat <i class="bi bi-mortarboard-fill"></i></h3>
+                        <p class="card-subtitle text-muted">2021</p>
+                        <p class="card-text">Lycée Techinique de Gbadolite, Gbadolite, RDC</p>
+                        <p class="card-text">Spécialité Commercial et Gestion, mention bien.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Formation-->
+        <div id="Formations" class="row mt-4">
+            <div class="col-12">
+                <h2 class="h3">Formations</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Machine Learning sur Android</h3>
+                                <p class="card-subtitle text-muted">11 septembre - 14 sept 2023</p>
+                                <p class="card-text">Orange Digital Center RDC</p>
+                                <img src="assets/images/android.png">
+                                <img src="assets/images/bot.png">
+                                <p class="card-text">Explorer le Machine Learning sur Android à l'aide de Mediapipe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Atelier: Agilite</h3>
+                                <p class="card-subtitle text-muted">09 octobre - 10 octobre 2023</p>
+                                <p class="card-text">Orange Digital Center RDC</p>
+                                <img src="assets/images/atelier.png">
+                                <p class="card-text">Atelier: Agilite, Developpez votre Potentiel !</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Se préparer au métier de développeur(euse)</h3>
+                                <p class="card-subtitle text-muted">7 Août 2023</p>
+                                <p class="card-text">Par Microsoft et LinkedIn</p>
+                                <img src="assets/images/microsoft.png">
+                                <img src="assets/images/linkedin.png">
+                                <p class="card-text">Preuve: <a href="https://lnkd.in/ewGH82AG">Certification</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Parcours Makers au FabLab Solidaire (Orange Digital Center)</h3>
+                                <p class="card-subtitle text-muted">30 octobre 2023 - à ce jour...</p>
+                                <p class="card-text">ODC RDC, Kinshasa</p>
+                                <p class="card-text">Parcours Makers sur l'initiation à la fabrication Numérique au FabLab Solidaire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Programme TECH@WORK (Cohort 2l)</h3>
+                                <p class="card-subtitle text-muted">...</p>
+                                <p class="card-text">OIE, Microsoft, SynapseU (Online)</p>
+                                <p class="card-text">Programme auquel j'ai été certifié pour avoir complèté les sessions de formation aux compétences numériques de base et de productivité et aux compétences interpersonnelles, professionnelles et entrepreneuriales.</p>
+                                <p class="card-subtitle text-muted">Références:</p>
+                                <ul>
+                                    <li>Kossivi Azati Amen KAKATSI: <span class="text-primary">amen@synapseu.org</span></li>
+                                    <li>Gnagna BA SALL: <br><span class="text-primary">gnagna@synapseu.org</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div id="contact" class="row mt-4">
+            <div class="col-12">
+                <h2 class="h3">Contact <i class="bi bi-telephone"></i></h2>
+                <div class="card mb-3 shadow-lg p-3">
+                    <div class="card-body">
+                        <p class="card-text">Si vous souhaitez me contacter, vous pouvez utiliser les moyens suivants :</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <a class="icon-link icon-link-hover" href="https://www.linkedin.com/in/salomon-viekoy-309240284/" target="_blank">
+                                    <i class="fs-2 bi bi-linkedin"></i><br> 
+                                    Linkedin
+                                </a>
+                            </div>
+                            <!--icone et lien Whatsapp-->
+                            <div class="col-md-2">
+                                <a class="icon-link icon-link-hover" href="https://wa.me/qr/CHPJZUORIMA5I1" target="_blank">
+                                    <i class="fs-2 bi bi-whatsapp"></i><br> 
+                                    WhatsApp
+                                </a>
+                            </div>
+                            <!--icone et lien facebook-->
+                            <div class="col-md-2">
+                                <a class="icon-link icon-link-hover" href="https://web.facebook.com/salomon.vekoy" target="_blank">
+                                    <i class="fs-2 bi bi-facebook"></i><br> 
+                                    Facebook
+                                </a>
+                            </div>
+                            <!--icone et lien Mail-->
+                            <div class="col-md-2">
+                                <a class="icon-link icon-link-hover" href="mailto:salomonvekoy@outlook.fr" >
+                                    <i class="fs-2 bi bi-envelope"></i><br>
+                                    Mail
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="icon-link icon-link-hover">
+                                    <i class="fs-2 bi bi-telephone icon-link icon-link-hover"></i><br>
+                                     +243 829235977
+                                </a>
+                            </div>
+                        </div>
+    </body>
+</html>        
